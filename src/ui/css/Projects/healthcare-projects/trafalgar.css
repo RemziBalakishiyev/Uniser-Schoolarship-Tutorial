@@ -1,0 +1,323 @@
+:root {
+  --primary: #458ff6;
+  --light-primary: #7aaff9;
+  --dark: #000;
+  --color-text: #233348;
+  --secondary-text: #7d7987;
+  --light: #fff;
+  --light-grey: #1f1534;
+  --main-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --custom-font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* =====COMMON STYLES=== */
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-contain {
+  background-color: var(--primary);
+  color: var(--light);
+  cursor: pointer;
+  transition: all 0.2s 0 ease;
+  border: none;
+}
+
+.btn-contain:hover {
+  background-color: var(--light-primary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--primary);
+  transition: all 0.2s 0s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.header {
+  width: 100%;
+  height: 500px;
+  /* background-color: var(--primary); */
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 56px;
+}
+
+.navbar h2 {
+  width: 190px;
+  color: var(--color-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar h2::before {
+  content: "T";
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 8px;
+  border-radius: 50%;
+  width: 17px;
+  display: inline-block;
+  height: 22px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbar .menu-list {
+  /* background-color: orange; */
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.navbar .menu-list li a {
+  color: var(--light-grey);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar .menu-list li .active {
+  font-weight: 800;
+}
+
+.header .main-content {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.header .main-content .main-content-text {
+  /* background-color: orange; */
+  width: 40%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header .main-content .main-content-text h1 {
+  width: 338px;
+  height: 88px;
+  font-family: var(--main-font);
+}
+.header .main-content .main-content-text p {
+  width: 327px;
+  font-family: var(--main-font);
+  color: var(--secondary-text);
+}
+
+.header .main-content img {
+  width: 40%;
+  height: 350px;
+}
+
+.element-one {
+  position: absolute;
+  top: 30%;
+}
+
+.element-two {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+}
+
+/* ========SERVICES========== */
+
+.services {
+  width: 100%;
+  height: 900px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.services .services-head {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .services-head h3 {
+  position: relative;
+  font-size: 24px;
+  font-family: var(--main-font);
+  margin-bottom: 30px;
+}
+.services .services-head h3::after {
+  content: " ";
+  width: 56px;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--dark);
+  position: absolute;
+  bottom: -30%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.services .services-head p {
+  width: 852px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+.services .services-card {
+  width: 80%;
+  /* background-color: orange; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.services .services-card .card {
+  width: 300px;
+  height: 324px;
+  background-color: var(--light);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 24px;
+  gap: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.services .services-card .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services .services-card .card .card-body .card-title {
+  font-family: var(--main-font);
+}
+.services .services-card .card .card-body .card-text {
+  font-family: var(--main-font);
+  color: var(--secondary-text);
+}
+
+/* ======CUSTOMER======= */
+.customer-section {
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-section .customer {
+  width: 80%;
+  height: 415px;
+  background: linear-gradient(45deg, #5a98f2, #67c3f3);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.customer-section .customer h2 {
+  font-size: 24px;
+  font-family: var(--main-font);
+  color: var(--light);
+  position: relative;
+}
+.customer-section .customer h2::after {
+  content: " ";
+  width: 56px;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--light);
+  position: absolute;
+  bottom: -30%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.customer-section .customer .customer-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.customer-section .customer .customer-information .customer-information-head {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.customer-section
+  .customer
+  .customer-information
+  .customer-information-head
+  img {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+}
+.customer-section
+  .customer
+  .customer-information
+  .customer-information-head
+  .customer-names {
+  color: var(--light);
+}
+
+.customer-section
+  .customer
+  .customer-information
+  .customer-information-head
+  .customer-names
+  h4 {
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+.customer-section
+  .customer
+  .customer-information
+  .customer-information-head
+  .customer-names
+  p {
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+.customer-section .customer .customer-information-details {
+  width: 320px;
+  color: var(--light);
+}

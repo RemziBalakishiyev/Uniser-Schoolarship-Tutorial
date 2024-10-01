@@ -94,13 +94,13 @@ const bookLibrary = {
 
 // const { age, lastName, firstName } = person;
 
-// // const { name, seasons } = movies;
-// // const {
-// //   name,
-// //   seasons: {
-// //     lastSeason: { episodeTwo },
-// //   },
-// // } = movies;
+// const { name, seasons } = movies;
+// const {
+//   name,
+//   seasons: {
+//     lastSeason: { episodeTwo },
+//   },
+// } = movies;
 
 // const { name, seasons } = movies;
 
